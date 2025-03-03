@@ -62,13 +62,8 @@ The script will:
 
 ## Example Output
 ```
-[INFO] Fetching URLs from Wayback Machine and gau...
-[INFO] Filtering URLs with query parameters...
-[INFO] Checking for live URLs using httpx-toolkit...
-[INFO] Running nuclei for DAST scanning...
-[INFO] Nuclei results saved to nuclei_results.txt
-[INFO] Live URLs saved to live_urls.txt
-[INFO] Automation completed successfully!
+![Screenshot (1187)](https://github.com/user-attachments/assets/d924ed0b-133c-45dc-8442-13d5786b2a2f)
+
 ```
 
 ## Disclaimer
