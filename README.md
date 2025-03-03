@@ -62,7 +62,7 @@ The script will:
 
 ## Example Output
 ```
-![Screenshot (1187)](https://github.com/user-attachments/assets/d924ed0b-133c-45dc-8442-13d5786b2a2f)
+![Screenshot (1187)](https://github.com/user-attachments/assets/e1643ba5-0daf-4469-ae73-e20e8deaf5e8)
 
 ```
 
