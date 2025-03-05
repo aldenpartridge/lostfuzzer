@@ -3,14 +3,6 @@
 ## Overview
 This script automates the process of extracting, filtering, and testing URLs by **gau** tool. It checks for live URLs and performs **DAST (Dynamic Application Security Testing)** using **nuclei**.
 
-## Features
-- Fetch URLs from **gau** tool in parallel
-- Filter URLs containing query parameters
-- Remove duplicate and sort URLs
-- Check for live URLs using **httpx-toolkit**
-- Perform **DAST scanning** with **nuclei**
-- Save results for further manual testing
-
 ## 🚀 Why This Tool?
 
 ParamSpider can create **imbalanced URLs** like:  
@@ -57,14 +49,14 @@ You'll be asked to provide:
 - A **target domain** or a **file** containing a list of subdomains
 
 The script will:
-1. Fetch URLs from **gau** tool in parallel
+1. Fetch passive URLs by **gau** tool in parallel if there are multiple subdomains
 2. Filter URLs containing query parameters
 3. Check which URLs are live using **httpx-toolkit**
 4. Run **nuclei** for **DAST scanning**
 5. Save results for manual testing
 
 ## Output Files
-- `filtered_urls.txt`: Filtered URLs with query parameters
+- `filtered_urls.txt`: Filtered URLs with query parameters for further manual testing
 - `nuclei_results.txt`: Results of the DAST scan
 
 ## Example Output
