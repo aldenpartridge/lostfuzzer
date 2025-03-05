@@ -9,7 +9,7 @@ ParamSpider can create **imbalanced URLs** like:
 ```
 http://testphp.vulnweb.com/listproducts.php?artist=FUZZ&cat=FUZZ
 ```
-This breaks **Nuclei DAST** scans because every query needs a valid parameter. The URL has too many FUZZ placeholders. This makes it harder for Nuclei to properly process and test each parameter because valid query structures are needed for effective scanning.
+This breaks **Nuclei DAST** scans because every query needs a valid parameter. The URL has too many FUZZ placeholders. This makes it harder for Nuclei to properly process and test each parameter because valid query structures are needed for effective scanning.also i did'nt used any active crawler tool bcz thats takes lots of time to get live urls from targets.
 
 That’s why I built this custom tool to extract only valid URLs with full query parameters, ensuring they are correctly formatted for security testing.
 
