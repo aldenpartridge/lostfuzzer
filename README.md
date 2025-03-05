@@ -64,6 +64,3 @@ The script will:
 
 ## Disclaimer
 This tool is intended for **educational and legal security testing purposes only**. The author is not responsible for any misuse of this script.
-
-## Author
-**~/.coffinxp@lostsec**
