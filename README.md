@@ -1,10 +1,10 @@
 # Automated URL Recon & DAST Scanning
 
 ## Overview
-This script automates the process of extracting, filtering, and testing URLs from Wayback Machine and **gau**. It checks for live URLs and performs **DAST (Dynamic Application Security Testing)** using **nuclei**.
+This script automates the process of extracting, filtering, and testing URLs by **gau** tool. It checks for live URLs and performs **DAST (Dynamic Application Security Testing)** using **nuclei**.
 
 ## Features
-- Fetch URLs from **Wayback Machine** and **gau** in parallel
+- Fetch URLs from **gau** tool in parallel
 - Filter URLs containing query parameters
 - Remove duplicate and sort URLs
 - Check for live URLs using **httpx-toolkit**
@@ -41,7 +41,7 @@ You'll be asked to provide:
 - A **target domain** or a **file** containing a list of subdomains
 
 The script will:
-1. Fetch URLs from Wayback Machine and **gau** in parallel
+1. Fetch URLs from **gau** tool in parallel
 2. Filter URLs containing query parameters
 3. Check which URLs are live using **httpx-toolkit**
 4. Run **nuclei** for **DAST scanning**
