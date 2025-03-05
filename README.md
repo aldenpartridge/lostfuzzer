@@ -60,7 +60,7 @@ The script will:
 - `nuclei_results.txt`: Results of the DAST scan
 
 ## Example Output
-![Screenshot (1187)](https://github.com/user-attachments/assets/e1643ba5-0daf-4469-ae73-e20e8deaf5e8)
+![Screenshot (1207)](https://github.com/user-attachments/assets/d663b424-2a89-4439-b54e-ba54e7397e21)
 
 ## Disclaimer
 This tool is intended for **educational and legal security testing purposes only**. The author is not responsible for any misuse of this script.
