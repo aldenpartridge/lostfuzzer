@@ -11,6 +11,24 @@ This script automates the process of extracting, filtering, and testing URLs by 
 - Perform **DAST scanning** with **nuclei**
 - Save results for further manual testing
 
+## 🚀 Why This Tool?
+
+ParamSpider can create **imbalanced URLs** like:  
+```
+http://testphp.vulnweb.com/listproducts.php?artist=FUZZ&cat=FUZZ
+```
+This breaks **Nuclei DAST** scans because every query needs a valid parameter. The URL has too many FUZZ placeholders. This makes it harder for Nuclei to properly process and test each parameter because valid query structures are needed for effective scanning.
+
+That’s why I built this custom tool to extract only valid URLs with full query parameters, ensuring they are correctly formatted for security testing.
+
+### 🛠️ What This Tool Does:  
+✅ **Extracts valid URLs** with real query parameters  
+✅ **Removes imbalanced/fuzzed queries**  
+✅ **Checks live URLs** before scanning  
+✅ **Runs Nuclei DAST properly** for accurate results  
+
+This makes **bug hunting faster, cleaner, and more effective!** 🚀
+
 ## Prerequisites
 Ensure the following tools are installed before running the script:
 
@@ -18,8 +36,6 @@ Ensure the following tools are installed before running the script:
 - [`uro`](https://github.com/s0md3v/uro)
 - [`nuclei`](https://github.com/projectdiscovery/nuclei)
 - [`httpx-toolkit`](https://github.com/projectdiscovery/httpx)
-
-
 
 ## Installation
 Clone the repository and navigate into it:
@@ -59,4 +75,3 @@ This tool is intended for **educational and legal security testing purposes only
 
 ## Author
 **~/.coffinxp@lostsec**
-
