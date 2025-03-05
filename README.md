@@ -1,7 +1,7 @@
 # Automated URL Recon & DAST Scanning
 
 ## Overview
-This script automates the process of extracting, filtering, and testing URLs by **gau** tool. It checks for live URLs and performs **DAST (Dynamic Application Security Testing)** using **nuclei**.
+This script automates the process of extracting, filtering, and testing passive URLs by using **gau** tool. It checks for live URLs and performs **DAST (Dynamic Application Security Testing)** using **nuclei**.
 
 ## 🚀 Why This Tool?
 
