@@ -14,20 +14,12 @@ This script automates the process of extracting, filtering, and testing URLs fro
 ## Prerequisites
 Ensure the following tools are installed before running the script:
 
-- [`curl`](https://curl.se/)
 - [`gau`](https://github.com/lc/gau)
 - [`uro`](https://github.com/s0md3v/uro)
-- [`httpx-toolkit`](https://github.com/projectdiscovery/httpx)
 - [`nuclei`](https://github.com/projectdiscovery/nuclei)
+- [`httpx-toolkit`](https://github.com/projectdiscovery/httpx)
 
-You can install them using:
-```bash
-apt install curl -y
-GO111MODULE=on go install -v github.com/lc/gau@latest
-pip install uro
-GO111MODULE=on go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-GO111MODULE=on go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-```
+
 
 ## Installation
 Clone the repository and navigate into it:
