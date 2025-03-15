@@ -19,7 +19,7 @@ EOF
 echo -e "${RESET}"
 
 # Ensure required tools are installed
-REQUIRED_TOOLS=("gau" "uro" "httpx-toolkit" "nuclei")
+REQUIRED_TOOLS=("gau" "uro" "httpx" "nuclei")
 for tool in "${REQUIRED_TOOLS[@]}"; do
     if ! command -v "$tool" &>/dev/null; then
         echo -e "${RED}[ERROR] $tool is not installed. Please install it and try again.${RESET}"
@@ -57,9 +57,9 @@ echo "$TARGETS" | xargs -P10 -I{} sh -c 'gau "{}" >> "$1"' _ "$GAU_FILE"
 echo -e "${GREEN}[INFO] Filtering URLs with query parameters...${RESET}"
 grep -E '\?[^=]+=.+$' "$GAU_FILE" | uro | sort -u > "$FILTERED_URLS_FILE"
 
-# Step 3: Check live URLs using httpx
-echo -e "${GREEN}[INFO] Checking for live URLs using httpx-toolkit...${RESET}"
-httpx-toolkit -silent -t 300 -rl 200 < "$FILTERED_URLS_FILE" > "$FILTERED_URLS_FILE.tmp"
+# Step 3: Check live URLs using 
+echo -e "${GREEN}[INFO] Checking for live URLs using httpx...${RESET}"
+httpx -silent -t 300 -rl 200 < "$FILTERED_URLS_FILE" > "$FILTERED_URLS_FILE.tmp"
 mv "$FILTERED_URLS_FILE.tmp" "$FILTERED_URLS_FILE"
 
 # Step 4: Run nuclei for DAST scanning
